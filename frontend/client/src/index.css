@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+@import "tailwindcss";
+
+/* ⬇️ 테마를 먼저 선언 */
+
+@plugin "daisyui/theme" {
+  name: "petcycle";
+  default: true;
+  prefersdark: false;
+  color-scheme: "light";
+  --color-base-100: oklch(98% 0 0);
+  --color-base-200: oklch(98% 0.022 95.277);
+  --color-base-300: oklch(90% 0.058 230.902);
+  --color-base-content: oklch(20% 0.042 265.755);
+  --color-primary: oklch(60% 0.118 184.704);
+  --color-primary-content: oklch(98% 0.014 180.72);
+  --color-secondary: oklch(71% 0.143 215.221);
+  --color-secondary-content: oklch(97% 0.014 308.299);
+  --color-accent: oklch(92% 0.006 264.531);
+  --color-accent-content: oklch(70% 0.022 261.325);
+  --color-neutral: oklch(82% 0.111 230.318);
+  --color-neutral-content: oklch(26% 0.007 34.298);
+  --color-info: oklch(60% 0.126 221.723);
+  --color-info-content: oklch(98% 0.019 200.873);
+  --color-success: oklch(90% 0.058 230.902);
+  --color-success-content: oklch(50% 0.134 242.749);
+  --color-warning: oklch(90% 0.076 70.697);
+  --color-warning-content: oklch(75% 0.183 55.934);
+  --color-error: oklch(70% 0.191 22.216);
+  --color-error-content: oklch(97% 0.013 17.38);
+  --radius-selector: 1rem;
+  --radius-field: 1rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1.5px;
+  --depth: 0;
+  --noise: 1;
+}
+
+/* ⬇️ 그 다음에 daisyUI 플러그인 */
+@plugin "daisyui";
+
+@theme {
+  --font-sans: "Ubuntu", "Noto Sans KR", ui-sans-serif, system-ui,
+               -apple-system, "Apple SD Gothic Neo", "Malgun Gothic",
+               "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+
